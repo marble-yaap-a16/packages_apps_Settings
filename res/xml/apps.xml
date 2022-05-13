@@ -134,4 +134,10 @@
         </Preference>
     </PreferenceCategory>
 
+     <com.yasp.settings.preferences.SecureSettingSwitchPreference
+            android:key="pm_downgrade_allowed"
+            android:title="@string/app_downgrade_title"
+            android:summary="@string/app_downgrade_summary"
+            android:defaultValue="false"/>
+
 </PreferenceScreen>

@@ -830,4 +830,9 @@
     <string name="search">Search</string>
     <string name="search_apps">Search apps</string>
 
+    <!-- App downgrade -->
+    <string name="app_downgrade_title">Allow application downgrade</string>
+    <string name="app_downgrade_summary">Allow to install an older version over installed applications</string>
+    <string name="app_downgrade_info">This may lead to application crashes or data corruption</string>
+
 </resources>
