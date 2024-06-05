@@ -516,25 +516,6 @@ public class WifiHotspotRepository {
         return true;
     }
 
-    protected void purgeRefreshData() {
-        mBand5g.isChannelsReady = false;
-        mBand6g.isChannelsReady = false;
-    }
-
-    protected class ActiveCountryCodeChangedCallback implements
-            WifiManager.ActiveCountryCodeChangedCallback {
-        @Override
-        public void onActiveCountryCodeChanged(String country) {
-            log("onActiveCountryCodeChanged(), country:" + country);
-            purgeRefreshData();
-            refresh();
-        }
-
-        @Override
-        public void onCountryCodeInactive() {
-        }
-    }
-
     /**
      * Return whether Wi-Fi Hotspot is restarting or not.
      *
