@@ -831,4 +831,9 @@
     <string name="app_downgrade_summary">Allow to install an older version over installed applications</string>
     <string name="app_downgrade_info">This may lead to application crashes or data corruption</string>
 
+    <!-- Hide applist -->
+    <string name="hide_applist_title">Hide applist</string>
+    <string name="hide_applist_summary">Prevent apps from checking selected apps from appslist</string>
+    <string name="menu_show_overlay">Show overlay</string>
+    <string name="menu_hide_overlay">Hide overlay</string>
 </resources>
