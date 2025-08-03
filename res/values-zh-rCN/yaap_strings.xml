@@ -420,11 +420,6 @@
     <string name="lockscreen_battery_info_title">充电信息</string>
     <string name="lockscreen_battery_info_summary">充电时在锁屏界面显示温度、类型等信息</string>
 
-    <!-- QS footer text -->
-    <string name="qs_footer_text_show_title">页脚文本</string>
-    <string name="qs_footer_text_string_title">磁贴面板左下方文本</string>
-    <string name="qs_footer_text_string_summary">为空则显示 YAAP</string>
-
     <!-- About -->
     <string name="about_title">关于</string>
     <string name="about_team_category">团队</string>

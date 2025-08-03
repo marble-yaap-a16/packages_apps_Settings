@@ -36,7 +36,6 @@ import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settingslib.search.SearchIndexable;
 
 import com.yasp.settings.preferences.SecureSettingMasterSwitchPreference;
-import com.yasp.settings.preferences.SystemSettingEditTextPreference;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -46,10 +45,8 @@ public class QuickSettings extends DashboardFragment implements
         Preference.OnPreferenceChangeListener {
 
     private static final String TAG = "QuickSettings";
-    private static final String QS_FOOTER_TEXT_STRING = "qs_footer_text_string";
     private static final String BRIGHTNESS_SLIDER = "qs_show_brightness";
 
-    private SystemSettingEditTextPreference mFooterString;
     private SecureSettingMasterSwitchPreference mBrightnessSlider;
 
     @Override
@@ -70,18 +67,6 @@ public class QuickSettings extends DashboardFragment implements
         boolean enabled = Settings.Secure.getInt(resolver,
                 BRIGHTNESS_SLIDER, 1) == 1;
         mBrightnessSlider.setChecked(enabled);
-
-        mFooterString = (SystemSettingEditTextPreference) findPreference(QS_FOOTER_TEXT_STRING);
-        mFooterString.setOnPreferenceChangeListener(this);
-        String footerString = Settings.System.getString(resolver,
-                QS_FOOTER_TEXT_STRING);
-        if (footerString != null && !footerString.isEmpty())
-            mFooterString.setText(footerString);
-        else {
-            mFooterString.setText("YAAP");
-            Settings.System.putString(resolver,
-                    Settings.System.QS_FOOTER_TEXT_STRING, "YAAP");
-        }
     }
 
     @Override
@@ -97,18 +82,7 @@ public class QuickSettings extends DashboardFragment implements
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         ContentResolver resolver = getActivity().getContentResolver();
-        if (preference == mFooterString) {
-            String value = (String) newValue;
-            if (value != null && !value.isEmpty())
-                Settings.System.putString(resolver,
-                        Settings.System.QS_FOOTER_TEXT_STRING, value);
-            else {
-                mFooterString.setText("YAAP");
-                Settings.System.putString(resolver,
-                        Settings.System.QS_FOOTER_TEXT_STRING, "YAAP");
-            }
-            return true;
-        } else if (preference == mBrightnessSlider) {
+        if (preference == mBrightnessSlider) {
             Boolean value = (Boolean) newValue;
             Settings.Secure.putInt(resolver,
                     BRIGHTNESS_SLIDER, value ? 1 : 0);

@@ -49,11 +49,6 @@
     <string name="lockscreen_battery_info_title">מידע על הטענה במסך הנעילה</string>
     <string name="lockscreen_battery_info_summary">הראה מידע אודות מתח, זרם וטמפרטורת סוללה במסך הנעילה</string>
 
-    <!-- QS footer text -->
-    <string name="qs_footer_text_show_title">הצג טקטס בתחתית ההגדרות המהירות</string>
-    <string name="qs_footer_text_string_title">שנה טקטס</string>
-    <string name="qs_footer_text_string_summary">שנה לכלום על מנת לבחור בברירת המחדל YAAP</string>
-
     <!-- About -->
     <string name="about_title">אודות</string>
     <string name="about_team_category">הצוות שלנו</string>
