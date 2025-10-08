@@ -140,4 +140,10 @@
             android:summary="@string/app_downgrade_summary"
             android:defaultValue="false"/>
 
+     <Preference
+           android:key="hide_applist_setting"
+           android:title="@string/hide_applist_title"
+           android:summary="@string/hide_applist_summary"
+           android:fragment="com.android.settings.custom.privacy.HideAppListSettings" />
+
 </PreferenceScreen>
