@@ -764,6 +764,13 @@
             android:summary="@string/keybox_data_summary"
             android:defaultValue=""/>
 
+        <!-- Vbmeta hash attestation -->
+        <com.yasp.settings.preferences.SystemPropertySwitchPreference
+           android:key="persist.sys.vbmeta.update"
+           android:title="@string/vbmeta_attestation_title"
+           android:summary="@string/vbmeta_attestation_summary"
+           android:defaultValue="true" />
+
     </PreferenceCategory>
 
     <PreferenceCategory
