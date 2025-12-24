@@ -855,4 +855,10 @@
     <!-- Vbmeta hash attestation -->
     <string name="vbmeta_attestation_title">Autofix VBMeta detection</string>
     <string name="vbmeta_attestation_summary">Perform key attestation to generate verified boot hash on boot. Requires system restart.</string>
+
+    <!-- Locale Picker -->
+    <string name="clear_search_query_description">Clear query</string>
+    <string name="language_picker_page">Language picker page</string>
+    <string name="search_region">Search regions</string>
+    <string name="search_region_page">Search region page</string>
 </resources>
