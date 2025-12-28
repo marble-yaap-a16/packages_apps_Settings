@@ -99,6 +99,12 @@
         android:key="advanced_category"
         android:title="@string/dark_theme_advanced_category">
 
+    <com.yasp.settings.preferences.SecureSettingSwitchPreference
+        android:key="berry_black_theme"
+        android:dependency="dark_ui_activated"
+        android:title="@string/berry_black_theme_title"
+        android:summary="@string/berry_black_theme_summary"
+        android:defaultValue="false"/>
     </PreferenceCategory>
 
     <com.android.settingslib.widget.FooterPreference
