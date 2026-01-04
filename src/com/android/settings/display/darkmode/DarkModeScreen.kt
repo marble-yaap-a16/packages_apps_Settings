@@ -16,6 +16,7 @@
 
 package com.android.settings.display.darkmode
 
+import com.android.settings.display.darkmode.BerryBlackThemeSwitchPreference.Companion.berryBlackThemeDataStore
 import android.app.UiModeManager
 import android.app.settings.SettingsEnums
 import android.app.settings.SettingsEnums.ACTION_DARK_THEME
